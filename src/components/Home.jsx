@@ -1,5 +1,4 @@
 import React from "react";
-import "../../public/styles.css";
 import "../../public/reviews.css";
 import "../../public/offers.css";
 import "../../public/footer.css";
