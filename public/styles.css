@@ -1,0 +1,452 @@
+/* Universal Reset */
+* {
+  padding: 0; /* Remove default padding from all elements */
+  margin: 0; /* Remove default margin from all elements */
+  box-sizing: border-box; /* Makes all elements' padding and border part of their total width/height */
+}
+
+html {
+  font-family: "Lato", sans-serif; /* Set the default font for the whole webpage */
+}
+
+body {
+  background-color: #f1c40f; /* Set a yellow background color for the body */
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png"); /* Add a subtle texture to the background */
+  margin: 0; /* Remove default margin from the body */
+  overflow-x: hidden;
+}
+
+/* Header Section */
+.flex-nav {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space items evenly with space between them */
+  align-items: center; /* Align items vertically in the center */
+  font-family: "Playfair", sans-serif; /* Set font for navigation */
+  width: 50%; /* Set width of navigation bar */
+  height: 50px; /* Set fixed height */
+  color: "#333333"; /* Set text color to dark gray */
+  padding: 0px 120px; /* Add horizontal padding */
+}
+
+.flex-nav-logo {
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+.flex-nav div {
+  margin: 0 10px; /* Add spacing between navigation items */
+}
+
+.flex-nav div img {
+  width: 100px; /* Set image width */
+  height: auto; /* Auto-adjust height to maintain aspect ratio */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background-color: #f1c40f;
+}
+
+/* Social media icons (left) */
+.header-container .MuiStack-root {
+  display: flex;
+  gap: 10px;
+}
+
+/* Navigation items (center) */
+.nav-items {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-item {
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 100px;
+}
+
+/* User icons (right) */
+.user-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Hide elements for smaller screens */
+@media (max-width: 1024px) {
+  .nav-items .nav-item,
+  .logo-container,
+  .user-icons {
+    display: none;
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-items .nav-item {
+    display: none; /* Hide all nav items */
+  }
+
+  .logo-container img {
+    display: none; /* Hide the logo */
+  }
+
+  .user-icons {
+    display: none; /* Hide the user icons */
+  }
+}
+
+/* Banner Section */
+.promo-bar {
+  background: #333333; /* Set background to dark gray */
+  color: #f1c40f; /* Set text color to yellow */
+  text-align: center; /* Center the text horizontally */
+  position: sticky; /* Make the promo bar sticky at the top of the page */
+  top: 0; /* Stick to the top */
+  z-index: 1002; /* Ensure the promo bar stays on top of other content */
+}
+
+.promo-bar .promo-bar-wrapper {
+  display: flex; /* Use Flexbox for layout */
+  align-items: center; /* Vertically center the items */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow wrapping of elements */
+  gap: 8px; /* Set space between elements */
+}
+
+.promo-bar .promo-bar-wrapper {
+  padding-top: 10px; /* Add padding at the top */
+  margin-bottom: 8px; /* Add margin at the bottom */
+}
+
+/* Hero Section */
+.hero {
+  padding: 40px 120px; /* Add padding on top and bottom, and left and right */
+}
+
+.hero .flex {
+  display: flex; /* Use Flexbox for layout */
+  align-items: flex-end; /* Align items to the bottom of the container */
+  margin-bottom: 52px; /* Add margin at the bottom */
+}
+
+.hero h1 {
+  font-size: 100px; /* Large font size for heading */
+  line-height: 1.1; /* Set line height */
+  margin: 0 16px -10px 0; /* Adjust margin around the heading */
+  letter-spacing: -0.01em; /* Slightly reduce spacing between letters */
+  font-weight: 900; /* Make the heading bold */
+}
+
+h1 em {
+  display: block; /* Make the emphasized text block-level */
+  text-transform: initial; /* Don't transform text */
+  font-weight: 400; /* Make the emphasized text normal weight */
+}
+
+.hero-btn {
+  display: inline-flex; /* Use Flexbox for layout within the button */
+  justify-content: center; /* Center the content inside the button */
+  align-items: center; /* Vertically align the content */
+  padding: 0 40px; /* Add padding to the left and right of the button */
+  height: 48px; /* Set button height */
+  background: 0 0; /* Remove default background */
+  color: #e63946; /* Set button text color */
+  border-radius: 9px; /* Round button corners */
+  border: 1px solid #e63946; /* Set button border color */
+  font-family: "Playfair", sans-serif; /* Set font for the button */
+  font-weight: 600; /* Set font weight */
+  text-transform: uppercase; /* Make text uppercase */
+  font-size: 16px; /* Set font size */
+  transition: all 0.2s ease-in-out; /* Add smooth transition for all properties */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-decoration: none; /* Remove underline from the button link */
+}
+
+.hero-btn:hover {
+  background-color: #333333;
+  border: 1px solid #333333 !important;
+  color: #ffffff !important;
+}
+
+.hero .hero-btn {
+  margin-left: auto; /* Push button to the right */
+  margin-bottom: 4px; /* Add margin at the bottom */
+}
+
+.hero .fixed-bg {
+  padding-top: 56px; /* Add padding to the top */
+  padding-bottom: 56px; /* Add padding to the bottom */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Allow positioning of child elements */
+  width: 100%; /* Make the background image cover the entire container */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center center; /* Center the background image */
+  background-attachment: fixed; /* Fix the background image while scrolling */
+  background-size: cover; /* Make the background image cover the whole container */
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  min-height: 60vh; /* Set minimum height of the container */
+}
+
+.hero .fixed-bg img {
+  max-width: 733px; /* Limit the width of the image */
+}
+
+@media (max-width: 1600px) {
+  .hero h1 {
+    font-size: 85px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero h1 {
+    font-size: 52px; /* Further adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero .fixed-bg {
+    background-attachment: initial; /* Disable fixed background on smaller screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .flex {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 48px; /* Adjust margin */
+  }
+
+  .hero h1 {
+    margin-bottom: 24px; /* Reduce margin below the heading */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .hero .hero-btn {
+    margin-left: 0; /* Remove left margin */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+
+  .hero .fixed-bg {
+    padding-top: 40px; /* Reduce padding for smaller screens */
+    padding-bottom: 40px;
+    background-attachment: initial; /* Disable fixed background */
+  }
+
+  .hero .fixed-bg img {
+    max-width: 500px; /* Limit the image width */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .fixed-bg {
+    width: calc(100% + 96px); /* Extend the width to cover full screen */
+    margin-left: -48px; /* Adjust positioning */
+    margin-right: -48px;
+    min-height: 20vh; /* Reduce height for mobile devices */
+    background-attachment: initial; /* Disable fixed background */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 35px; /* Adjust font size for smaller screens */
+    font-size: 2.1875rem;
+  }
+
+  .hero .fixed-bg {
+    width: calc(100% + 32px); /* Extend the width */
+    margin-left: -16px; /* Adjust margin */
+    margin-right: -16px;
+  }
+
+  .hero .fixed-bg img {
+    max-width: 275px; /* Limit the image width */
+  }
+}
+
+.hero-btn.hero-btn__on-yellow {
+  color: red; /* Change text color */
+  border: 1px solid red; /* Set white border */
+}
+
+/* Features Section */
+.container.px-4.py-5 {
+  background-color: #333333; /* Dark background color */
+  color: #f1c40f; /* Yellow text color */
+  text-align: center; /* Center-align the text */
+}
+
+.container.px-4.py-5 h2 {
+  text-align: center; /* Center-align the heading */
+}
+
+.text-body-emphasis {
+  color: white !important; /* Override any other color to make text white */
+  text-align: center; /* Center-align text */
+}
+
+.full-width-container {
+  width: 100%; /* Full width container */
+  max-width: 100%; /* Ensure maximum width is 100% */
+  padding-bottom: 0px !important;
+}
+
+/* Card Section */
+.card-img-top {
+  width: 100%; /* Ensure images take full width */
+  height: 280px; /* Set fixed height for the images */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  object-position: center; /* Center the image */
+}
+
+.card {
+  border: 1px solid #ddd; /* Light gray border for the card */
+  border-radius: 8px; /* Round corners */
+  margin: 10px; /* Space between cards */
+  overflow: hidden; /* Hide anything overflowing the card */
+}
+
+.card-body {
+  display: flex; /* Use Flexbox for the card content */
+  flex-direction: column; /* Stack elements vertically */
+  padding: 15px; /* Padding inside the card */
+  height: 125px; /* Set height for consistent card body */
+  color: #ddd; /* Light text color */
+  background-color: #333333; /* Dark background for the card */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Set the font size for the title */
+}
+
+.card-info {
+  font-size: 1rem; /* Set the font size for the info */
+  color: #f1c40f; /* Yellow color for the info */
+}
+
+/* Carousel Section */
+#carouselExampleDark {
+  position: relative; /* Set the carousel's position to relative */
+  height: 600px; /* Set fixed height for carousel */
+}
+
+#carouselExampleDark h1 {
+  color: #333333;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if there's enough space */
+  height: 15vh; /* Make sure the container takes the full height */
+}
+
+.carousel-btn {
+  /* Optional styles for the button itself */
+  padding: 12px 20px;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Position the carousel navigation buttons at the bottom */
+.carousel-controls {
+  position: absolute; /* Position buttons absolutely inside the carousel */
+  bottom: 90px; /* Set distance from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  width: 100%; /* Ensure buttons span the full width */
+  display: flex; /* Use Flexbox for button layout */
+  justify-content: space-between; /* Spread the buttons apart */
+  padding: 0 10px; /* Add horizontal padding */
+}
+
+/* Style the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none; /* Remove default background */
+  border: none; /* Remove border */
+  font-size: 30px; /* Increase font size for larger icons */
+  color: #ffffff; /* Set icon color to white */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(
+    120,
+    121,
+    47,
+    0.5
+  ); /* Semi-transparent background for the icons */
+  border-radius: 50%; /* Round the icon background */
+  padding: 10px; /* Adjust icon size */
+}
+
+/* For mobile screens (adjusting arrows' size and color) */
+@media (max-width: 768px) {
+  /* Carousel Controls */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000000;
+  }
+  #carouselExampleDark {
+    position: relative; /* Set the carousel's position to relative */
+    height: 1100px; /* Set fixed height for carousel */
+  }
+  .card {
+    margin: 10px 0; /* Remove side margins and add top/bottom margin */
+    width: 100%; /* Ensure cards take the full width of the container */
+  }
+
+  .card-img-top {
+    height: 200px; /* Reduce image height to fit better on mobile screens */
+  }
+
+  .card-body {
+    height: auto; /* Allow the card body height to adjust based on content */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Adjust title font size for mobile */
+  }
+
+  .card-info {
+    font-size: 0.9rem; /* Adjust the info font size for mobile */
+  }
+
+  /* Adjust layout for card columns (optional, if you want 1 column on mobile) */
+  .row {
+    display: block; /* Stack cards in a single column */
+  }
+}

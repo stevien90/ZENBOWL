@@ -1,0 +1,36 @@
+.sub-box {
+  background-color: #333333;
+  border: none; /* Ensure no border is applied to .sub-box */
+  box-shadow: none; /* Remove any shadow */
+}
+
+.sub-title {
+  color: #f1c40f;
+}
+
+.sub-text {
+  color: #ffffff;
+}
+
+/* Button hover styles to make sure they are not overwritten */
+.sub-box .btn:hover {
+  background-color: #f1c40f;
+  border: 1px solid #f1c40f !important;
+  color: #ffffff !important;
+}
+
+/* If the button itself is being highlighted */
+.btn:focus,
+.btn:active {
+  outline: none; /* Disable outline on button */
+  box-shadow: none; /* Disable box-shadow on button when clicked */
+}
+
+/* Ensure hover and active states of the sub-box are not applied */
+.sub-box:hover {
+  background-color: #333333; /* Ensure the background stays the same */
+}
+
+.sub-box .sub-title:hover {
+  color: #f1c40f; /* Ensure the title color stays the same */
+}

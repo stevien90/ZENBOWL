@@ -1,0 +1,21 @@
+.container-title-info p {
+  font-size: 20px;
+}
+
+.review-text-box {
+  width: 100%; /* Ensure it takes up the full available width */
+  height: 15vh; /* Adjust this height as needed */
+  display: flex; /* Allow the text to fill the box */
+  padding: 20px;
+  justify-content: center; /* Align text horizontally */
+  align-items: center; /* Align text vertically */
+  text-align: center; /* Ensure text is centered */
+  color: #333; /* Change text color if needed */
+}
+.star {
+  padding-bottom: 20px;
+  color: red;
+}
+.name {
+  color: #ffffff;
+}
