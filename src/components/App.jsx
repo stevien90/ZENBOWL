@@ -1,4 +1,11 @@
 import React from "react";
+import "../styles.css";
+import "../reviews.css";
+import "../offers.css";
+import "../footer.css";
+import "../navbar.css";
+import "../construction.css";
+import "../subscription.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Use Routes instead of Switch
 import Construction from "./Construction";
 import Subscription from "./Subscription";
