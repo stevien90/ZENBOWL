@@ -1,10 +1,11 @@
 import React from "react";
-import "../../public/reviews.css";
-import "../../public/offers.css";
-import "../../public/footer.css";
-import "../../public/navbar.css";
-import "../../public/construction.css";
-import "../../public/subscription.css";
+import "../styles.css";
+import "../reviews.css";
+import "../offers.css";
+import "../footer.css";
+import "../navbar.css";
+import "../construction.css";
+import "../subscription.css";
 import Banner from "./Banner";
 import NavBar from "./NavBar";
 import Hero2 from "./Hero2";
