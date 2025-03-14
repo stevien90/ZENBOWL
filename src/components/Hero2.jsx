@@ -9,9 +9,9 @@ function Hero2() {
             <em>Nourish Your Body, Delight Your Tastebuds</em>
             AUTHENTIC RICE BOWL
           </h1>
-          <a href="" className="hero-btn hero-btn__on-yellow" role="button">
+          <Link className="hero-btn hero-btn__on-yellow" to="/subscription">
             Get Started
-          </a>
+          </Link>
         </div>
 
         <div
