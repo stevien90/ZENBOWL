@@ -118,13 +118,9 @@ const Carousel = () => {
         </button>
       </div>
       <div className="button-container">
-        <a
-          href=""
-          className="hero-btn hero-btn__on-yellow carousel-btn"
-          role="button"
-        >
-          Get Started
-        </a>
+        <Link className="hero-btn hero-btn__on-yellow" to="/subscription">
+            Get Started
+          </Link>
       </div>
     </div>
   );
