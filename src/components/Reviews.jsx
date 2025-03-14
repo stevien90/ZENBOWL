@@ -17,7 +17,7 @@ const Reviews = () => {
       <div className="row text-center">
         <div className="col-md-4 mb-3 mb-md-0">
           <div className="d-flex justify-content-center mb-0"></div>
-          <h5 className="mb-3 name">Maria Smantha</h5>
+          <h5 className="mb-3 name">Maria Sutherland</h5>
 
           <p className="px-xl-3 review-text-box">
             All of the ZENBOWL that we have tried have been great! We haven't

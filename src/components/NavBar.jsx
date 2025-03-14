@@ -17,16 +17,16 @@ const NavBar = () => {
             />
           </Link>
 
-          <Link class="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/">
             Home
           </Link>
-          <Link class="navbar-brand" to="/subscription">
+          <Link className="navbar-brand" to="/subscription">
             Subscribe
           </Link>
-          <Link class="navbar-brand" to="/under-construction">
+          <Link className="navbar-brand" to="/under-construction">
             Contact
           </Link>
-          <Link class="navbar-brand" to="/under-construction">
+          <Link className="navbar-brand" to="/under-construction">
             <ShoppingCartIcon />
           </Link>
         </div>

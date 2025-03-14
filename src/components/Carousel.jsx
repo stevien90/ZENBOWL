@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const listOfCards = [
@@ -119,8 +120,8 @@ const Carousel = () => {
       </div>
       <div className="button-container">
         <Link className="hero-btn hero-btn__on-yellow" to="/subscription">
-            Get Started
-          </Link>
+          Get Started
+        </Link>
       </div>
     </div>
   );
