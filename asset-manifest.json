@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ZENBOWL/static/css/main.80e1c5f5.css",
-    "main.js": "/ZENBOWL/static/js/main.a6c38727.js",
+    "main.js": "/ZENBOWL/static/js/main.9cbcd6a5.js",
     "index.html": "/ZENBOWL/index.html",
     "main.80e1c5f5.css.map": "/ZENBOWL/static/css/main.80e1c5f5.css.map",
-    "main.a6c38727.js.map": "/ZENBOWL/static/js/main.a6c38727.js.map"
+    "main.9cbcd6a5.js.map": "/ZENBOWL/static/js/main.9cbcd6a5.js.map"
   },
   "entrypoints": [
     "static/css/main.80e1c5f5.css",
-    "static/js/main.a6c38727.js"
+    "static/js/main.9cbcd6a5.js"
   ]
 }
