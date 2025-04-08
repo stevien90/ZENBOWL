@@ -1,7 +1,3 @@
-Here’s a simple README template for your GitHub project. You can modify it to suit any additional features or specifics about your project.
-
----
-
 # ZENBOWL
 
 ZENBOWL is a web application built using React and Bootstrap. It provides a sleek, responsive interface designed to promote a calm and minimalist experience.
