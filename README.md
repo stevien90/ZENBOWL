@@ -26,6 +26,4 @@ Feel free to fork this repository and submit pull requests. If you find any issu
 
 This project is open-source and available under the [MIT License](LICENSE).
 
----
 
-Feel free to customize this readme further by adding any additional details that may apply to your specific project, like usage instructions or specific components you used!
